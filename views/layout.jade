@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title Mi Aplicai&oacute;n Angular
+        link(
+            href="/stylesheets/style.css"
+            rel="stylesheet"
+        )
+    body(
+        ng-app="myApp"
+        ng-cloak
+        ng-controller="AppController as app"
+    )
+        block content
+        script(src="javascripts/angular.min.js")
+        script(src="javascripts/router.es5.js")
+        script(src="javascripts/app.js")
+        script(src="components/home/home.js")
+        script(src="components/detail/detail.js")
